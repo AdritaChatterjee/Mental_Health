@@ -1,0 +1,32 @@
+1.main autentication and setup file in...
+   configFirebass(total setup file is here if requied just need this)
+2.auth file 
+    is mainly login and sign up page
+     const signInWithGoogle = async () => {
+        try {
+            await signInWithPopup(auth, googleProvider);
+            navigate("/quiz")
+        } catch (err) {
+            console.error(err);
+        }
+    };
+    when the signup-done the quiz page will be open
+
+3.  const logOut = async () => {
+    try {
+      await signOut(auth);
+      navigate("/")
+    } catch (err) {
+      console.error(err);
+    }
+  };
+  in the quizSytem.js the sign out is occur
+
+4.We also now the import file it is mandatory
+
+    import { auth, googleProvider } from "../config/firebase/configFirebase";
+    import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+    import { onAuthStateChanged } from "firebase/auth";
+    import { useEffect, useState } from "react";
+    import QuizSystem from "../component/QuizSystem";
+    import { NavLink, useNavigate } from 'react-router-dom'

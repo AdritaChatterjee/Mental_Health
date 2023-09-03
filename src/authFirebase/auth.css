@@ -1,0 +1,86 @@
+/* Reset some default styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Add a background image to the entire page */
+body {
+  /* background-image: url("https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  background-color: aliceblue;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Fixed background image */
+}
+
+/* Center the content vertically and horizontally */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Add a semi-transparent background */
+}
+
+/* Add a subtle animation to the container */
+.auth-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style the input fields and buttons */
+.input-group {
+  margin-bottom: 20px;
+  width: 300px;
+  /* Adjust the width as needed */
+}
+
+.input-group input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #3498db;
+  /* Use a highlight color for borders */
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-button {
+  padding: 10px 20px;
+  /* Fix the typo */
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #85e08d;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Additional styles and adjustments as needed */
+/* You can add more styles for headings, labels, etc. */
