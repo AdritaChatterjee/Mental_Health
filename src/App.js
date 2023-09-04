@@ -30,6 +30,7 @@ import Auth from "./authFirebase/auth"
 import Navbar from './component/Navbar/Navbar';
 import DropdownButton from './component/DropdownButton';
 import Choice1 from './component/Choice';
+import { Description } from './component/Description/Description';
 function App() {
 
 
@@ -39,9 +40,10 @@ function App() {
       <Routes>
         {/* <Switch> */}
         <Route path="/" element={<Navbar/>}/>
-        <Route path="/MedicalCondition" element={<DropdownButton/>}/>
+        {/* <Route path="/MedicalCondition" element={<DropdownButton/>}/> */}
+        <Route path ="/Medical" element={<Description/>}/>
         <Route path="/Auth" element={< Auth />} />
-        <Route path='/quiz' element={<Choice/>} />
+        <Route path='/quiz' element={<DropdownButton/>} />
         {/* <Route path="choice" element={<Choice1/>}/> */}
         {/* </Switch> */}
         {/* </div> */}
