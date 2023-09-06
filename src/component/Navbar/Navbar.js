@@ -11,7 +11,7 @@ function Navbar() {
     useEffect(() => {
         // Your Typed.js configuration goes here
         const options = {
-            strings: ['Hello, World!', 'Welcome to React Typed.js'],
+            strings: ['Mental Health', 'Depression', 'Anxiety'],
             typeSpeed: 50,
             backSpeed: 25,
             loop: true,
@@ -97,7 +97,7 @@ function Navbar() {
                         <button class="cn"><a href="#">JOIN US</a></button>
                     </div>
                     <div>
-                        <img src="https://o.remove.bg/downloads/43a94751-0d3c-4b73-9e08-e6eed357adcb/causes-of-depression-removebg-preview.png"></img>
+                        <img src="https://o.remove.bg/downloads/6eb8dffb-f139-4970-bdcc-6f24d6bb07e7/causes-of-depression-removebg-preview.png"></img>
                     </div>
                 </div>
             </div>
