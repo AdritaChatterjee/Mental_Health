@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import './Dropdown.css';
-
+import { Description } from './Description/Description'
 function DropdownButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-
+  const getData = () => {
+    const ele = document.querySelector(".bodydpn").classList.add("activedpn")
+  }
   return (
+    <div className="con">
     <div class="container">
       <h2>Choose Your <br />Medical Condition</h2><br></br>
       <div class="form-group">
-        
+
         <div class="radio-group">
           <label class="radio-label">
             <input type="radio" name="verticalRadios" value="Option 1" />  Depression
@@ -35,18 +38,20 @@ function DropdownButton() {
         <label for="horizontalRadios">Choose your age group:</label>
         <div class="radio-group horizontal">
           <label class="radio-label">
-            
+
             <br></br><input type="radio" name="horizontalRadios" value="Option A" /> 1-10
           </label>
           <label class="radio-label">
             <br></br><input type="radio" name="horizontalRadios" value="Option B" /> 11-18
           </label>
           <label class="radio-label">
-          <br></br><input type="radio" name="horizontalRadios" value="Option C" /> 18+
+            <br></br><input type="radio" name="horizontalRadios" value="Option C" /> 18+
           </label>
         </div>
       </div>
-      <button class="btn-continue">Continue</button>
+      <button class="btn-continue" onClick={getData}>Continue</button>
+    </div>
+    <Description />
     </div>
   );
 }

@@ -31,20 +31,20 @@ import Navbar from './component/Navbar/Navbar';
 import DropdownButton from './component/DropdownButton';
 import Choice1 from './component/Choice';
 import { Description } from './component/Description/Description';
- 
+import Connect from './component/connect';
 function App() {
 
 
-  const index=1;
+  const index = 1;
   return (
     <Router>
       <Routes>
         {/* <Switch> */}
-        <Route path="/" element={<Navbar/>}/>
+        <Route path="/" element={<Navbar />} />
         {/* <Route path="/MedicalCondition" element={<DropdownButton/>}/> */}
-        <Route path ="/Medical" element={<Description/>}/>
+        <Route path="/quizPage" element={<Choice1 />} />
         <Route path="/Auth" element={< Auth />} />
-        <Route path='/quiz' element={<DropdownButton/>} />
+        <Route path='/quiz' element={< DropdownButton />} />
         {/* <Route path="choice" element={<Choice1/>}/> */}
         {/* </Switch> */}
         {/* </div> */}

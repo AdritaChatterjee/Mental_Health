@@ -10,7 +10,7 @@ import "./Quiz.css"
 
 const Choice = () => {
     const quizNames = ["depresion", "anxiety"];
-    const [x, setX] = useState(-1);
+    const [x, setX] = useState(0);
     const [chosen, setChosen] = useState(false);
     const navigate = useNavigate();
     const handleChange = (e) => {

@@ -99,7 +99,7 @@ function Navbar() {
                         <Link to="/Auth" className="typed" href="/Auth">JOIN US</Link>
                     </div>
                     <div>
-                        <img src="https://o.remove.bg/downloads/43a94751-0d3c-4b73-9e08-e6eed357adcb/causes-of-depression-removebg-preview.png"></img>
+                        <img src="depretion.png"></img>
                     </div>
                 </div>
             </div>
