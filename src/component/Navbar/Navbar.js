@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Typed from 'typed.js';
 import { NavLink } from "react-router-dom";
 import "./Navbar.css"
+import {Link} from 'react-router-dom'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -11,7 +12,7 @@ function Navbar() {
     useEffect(() => {
         // Your Typed.js configuration goes here
         const options = {
-            strings: ['Mental Health', 'Depression', 'Anxiety'],
+            strings: ['Welcome to the Mental Health Tracker where you can get information about the different mental health disorders.'],
             typeSpeed: 50,
             backSpeed: 25,
             loop: true,
@@ -31,7 +32,7 @@ function Navbar() {
                 <nav className="navbar">
                     <div className="nav-container">
                         <NavLink exact to="/" className="nav-logo">
-                            CodeBucks
+                            Government of India
                             <i className="fas fa-code"></i>
                         </NavLink>
 
@@ -75,14 +76,15 @@ function Navbar() {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink exact to="/Auth"
+                                <NavLink exact to="/contact"
                                     activeClassName="active"
                                     className="nav-links"
                                     onClick={handleClick}
                                 >
-                                    Sign In
+                                    Donate
                                 </NavLink>
                             </li>
+                            
                         </ul>
                         <div className="nav-icon" onClick={handleClick}>
                             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
@@ -94,10 +96,10 @@ function Navbar() {
                         <span className="typed"></span>
                         <br />
                         <br />
-                        <button class="cn"><a href="#">JOIN US</a></button>
+                        <Link to="/Auth" className="typed" href="/Auth">JOIN US</Link>
                     </div>
                     <div>
-                        <img src="https://o.remove.bg/downloads/6eb8dffb-f139-4970-bdcc-6f24d6bb07e7/causes-of-depression-removebg-preview.png"></img>
+                        <img src="https://o.remove.bg/downloads/43a94751-0d3c-4b73-9e08-e6eed357adcb/causes-of-depression-removebg-preview.png"></img>
                     </div>
                 </div>
             </div>

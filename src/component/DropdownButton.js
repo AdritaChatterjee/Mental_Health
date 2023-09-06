@@ -10,38 +10,39 @@ function DropdownButton() {
 
   return (
     <div class="container">
-      <h2>Choice Your <br />Medical Condition</h2>
+      <h2>Choose Your <br />Medical Condition</h2><br></br>
       <div class="form-group">
-        <label for="verticalRadios">Vertical Radio Buttons:</label>
+        
         <div class="radio-group">
           <label class="radio-label">
-            <input type="radio" name="verticalRadios" value="Option 1" /> Option 1
-          </label>
+            <input type="radio" name="verticalRadios" value="Option 1" />  Depression
+          </label><br></br>
           <label class="radio-label">
-            <input type="radio" name="verticalRadios" value="Option 2" /> Option 2
-          </label>
+            <input type="radio" name="verticalRadios" value="Option 2" /> Anxiety
+          </label><br></br>
           <label class="radio-label">
-            <input type="radio" name="verticalRadios" value="Option 3" /> Option 3
-          </label>
+            <input type="radio" name="verticalRadios" value="Option 3" /> Bipolarity
+          </label><br></br>
           <label class="radio-label">
-            <input type="radio" name="verticalRadios" value="Option 4" /> Option 4
-          </label>
+            <input type="radio" name="verticalRadios" value="Option 4" /> Eating Disorders
+          </label><br></br>
           <label class="radio-label">
-            <input type="radio" name="verticalRadios" value="Option 5" /> Option 5
-          </label>
+            <input type="radio" name="verticalRadios" value="Option 5" /> Neurodevelopment Disorders
+          </label><br></br>
         </div>
       </div>
       <div class="form-group">
-        <label for="horizontalRadios">Horizontal Radio Buttons:</label>
+        <label for="horizontalRadios">Choose your age group:</label>
         <div class="radio-group horizontal">
           <label class="radio-label">
-            <input type="radio" name="horizontalRadios" value="Option A" /> Option A
+            
+            <br></br><input type="radio" name="horizontalRadios" value="Option A" /> 1-10
           </label>
           <label class="radio-label">
-            <input type="radio" name="horizontalRadios" value="Option B" /> Option B
+            <br></br><input type="radio" name="horizontalRadios" value="Option B" /> 11-18
           </label>
           <label class="radio-label">
-            <input type="radio" name="horizontalRadios" value="Option C" /> Option C
+          <br></br><input type="radio" name="horizontalRadios" value="Option C" /> 18+
           </label>
         </div>
       </div>
