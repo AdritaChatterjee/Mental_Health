@@ -4,7 +4,7 @@ import "./Description.css"
 export const Description = () => {
     return (
         <div class="card">
-            <h1>Coronavirus - Facts, advice and measures</h1>
+            <h1>Depression Awareness</h1>
 
             <details class="warning">
                 <summary>Facts and knowledge about COVID-19</summary>
