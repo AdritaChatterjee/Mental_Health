@@ -24,33 +24,31 @@
 import React from 'react';
 import './App.css';
 import Reactcontact from './component/reactcontact';
-import Choice from "./component/Quiz"; // Import the QuizSystem component
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Auth from "./authFirebase/auth"
 import Navbar from './component/Navbar/Navbar';
 import DropdownButton from './component/DropdownButton';
-import Choice1 from './component/Choice';
 import { Description } from './component/Description/Description';
-import Connect from './component/connect';
+import Quiz from './component/Quiz';
+
 function App() {
 
-
-  const index = 1;
+  // const index = 1;
   return (
     <Router>
       <Routes>
         {/* <Switch> */}
         <Route path="/" element={<Navbar />} />
         {/* <Route path="/MedicalCondition" element={<DropdownButton/>}/> */}
-        <Route path="/quizPage" element={<Choice1 />} />
+        <Route path="/quizPage" element={<Quiz />} />
         <Route path="/Auth" element={< Auth />} />
         <Route path='/quiz' element={< DropdownButton />} />
-        {/* <Route path="choice" element={<Choice1/>}/> */}
         {/* </Switch> */}
         {/* </div> */}
       </Routes>
     </Router>
   );
 }
+
 
 export default App;
