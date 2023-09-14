@@ -27,10 +27,8 @@ import Reactcontact from './component/reactcontact';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Auth from "./authFirebase/auth"
 import Navbar from './component/Navbar/Navbar';
-import DropdownButton from './component/DropdownButton';
-import { Description } from './component/Description/Description';
 import Quiz from './component/Quiz';
-
+import SymtomAnalysis from "./pages/symtomAnalysis"
 function App() {
 
   // const index = 1;
@@ -40,9 +38,9 @@ function App() {
         {/* <Switch> */}
         <Route path="/" element={<Navbar />} />
         {/* <Route path="/MedicalCondition" element={<DropdownButton/>}/> */}
-        <Route path="/quizPage" element={<Quiz />} />
+        <Route path="/quizPage" element={<SymtomAnalysis />} />
         <Route path="/Auth" element={< Auth />} />
-        <Route path='/quiz' element={< DropdownButton />} />
+        <Route path='/quiz' element={<SymtomAnalysis />} />
         {/* </Switch> */}
         {/* </div> */}
       </Routes>

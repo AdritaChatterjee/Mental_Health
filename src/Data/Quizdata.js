@@ -1,13 +1,13 @@
 export const QuizData = [
     {
-        question: "What does CSS stand for?",
-        options: ["Central Style Sheets", "Cascading Style Sheets", "Cascading Simple Sheets", "Cars SUVs Sailboats"],
+        question: "Trouble sleeping",
+        options: ["Yes", "No"],
         answer: 2
     },
     {
         question: "difficulty concentrating",
         options: ["Yes", "No"],
-        answer: 1
+        answer: 2
     },
     {
         question: "A loss of interest in enjoyable activities",
