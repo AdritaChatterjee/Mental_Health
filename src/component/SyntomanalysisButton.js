@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function SyntomanalysisButton({ title, index, setDataIndex }) {
     const handleClick = () => {
         // alert('Button clicked!');

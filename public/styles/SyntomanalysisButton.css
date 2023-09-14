@@ -1,0 +1,20 @@
+/* */
+
+.MyButton {
+  display: inline-block;
+  margin-right: 10px; /* Add margin for spacing between buttons */
+}
+
+button {
+  background-color: #0074cc; /* Set your desired button background color here */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth background color transition on hover */
+}
+
+button:hover {
+  background-color: #0056a7; /* Change the button background color on hover */
+}
